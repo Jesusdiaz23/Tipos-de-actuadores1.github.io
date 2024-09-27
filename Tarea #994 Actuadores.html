@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Actuadores – Framework de presentación HTML</title>
+    <meta name="description" content="Presentación interactiva sobre actuadores usando HTML">
+    <meta name="author" content="Jesus Noel Diaz Delgado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Estilos para las diapositivas -->
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme"> <!-- Moon theme agregado -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Estilos para imprimir -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Primera sección: Introducción -->
+            <section>
+                <h1>Actuadores</h1>
+                <h3>Principios Básicos y Aplicaciones</h3>
+                <p><small>Presentado por <strong>Jesus Noel Diaz Delgado</strong></small></p>
+                <p><small>Materia: Sistemas Programables</small></p>
+            </section>
+
+            <!-- Sección de definición del actuador -->
+            <section>
+                <section>
+                    <h2>¿Qué es un actuador?</h2>
+                    <p>Un actuador convierte señales de control en movimiento físico, permitiendo ejecutar tareas mecánicas como mover un motor o abrir una válvula.</p>
+                </section>
+
+                <!-- Diapositiva vertical sobre Actuadores Eléctricos -->
+                <section>
+                    <h2>Actuadores Eléctricos</h2>
+                    <p>Transforman energía eléctrica en movimiento. Precisión y control sencillo. Usos: motores AC/DC, solenoides y actuadores lineales.</p>
+                    <ul>
+                        <li><strong>Modos de control:</strong> PID, Modbus, PWM</li>
+                        <li><strong>Ventajas:</strong> Alta precisión, bajo mantenimiento</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Sección de Actuadores Mecánicos -->
+            <section>
+                <section>
+                    <h2>Actuadores Mecánicos</h2>
+                    <p>Transforman energía mecánica en movimiento lineal, usando tornillos, engranajes y levas.</p>
+                </section>
+
+                <!-- Diapositiva vertical sobre funcionamiento y características -->
+                <section>
+                    <ul>
+                        <li><strong>Modos de control:</strong> Sistemas mecánicos manuales</li>
+                        <li><strong>Ventajas:</strong> Alta durabilidad, sin necesidad de energía eléctrica</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Sección de Actuadores Hidráulicos -->
+            <section>
+                <section>
+                    <h2>Actuadores Hidráulicos</h2>
+                    <p>Usan fluidos presurizados para generar movimiento en cilindros o motores. Altamente potentes y precisos.</p>
+                </section>
+
+                <!-- Diapositiva vertical sobre modos de control y ventajas -->
+                <section>
+                    <ul>
+                        <li><strong>Modos de control:</strong> Válvulas de control hidráulico</li>
+                        <li><strong>Ventajas:</strong> Gran potencia, precisión y fuerza</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Sección de Conclusiones -->
+            <section>
+                <h2>Conclusiones</h2>
+                <ul>
+                    <li>Los actuadores son clave en la automatización de sistemas.</li>
+                    <li>Existen varios tipos: eléctricos, mecánicos e hidráulicos, seleccionados según la aplicación.</li>
+                </ul>
+            </section>
+
+            <!-- Sección de agradecimientos -->
+            <section>
+                <h2>Gracias</h2>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts necesarios para la presentación -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'slide', // Cambiar la transición si es necesario
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+            ]
+        });
+    </script>
+</body>
+
+</html>
